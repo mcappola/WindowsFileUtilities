@@ -1,0 +1,1 @@
+for %%f in (*.gz) do gzip -d "%%f"
