@@ -1,5 +1,5 @@
 @echo off
-set "directory=c:\work\tools\windowstools\cdfiles"
+set "directory=c:\cdfiles"
 
 set /p godir=<"%directory%"\%1.txt
 cd %godir%
