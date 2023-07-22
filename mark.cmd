@@ -1,6 +1,6 @@
 
 @echo off
-set "directory=c:\work\tools\windowstools\cdfiles"
+set "directory=c:\cdfiles"
 
 if not exist "%directory%" (
     mkdir "%directory%"
