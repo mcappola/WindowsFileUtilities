@@ -1,7 +1,7 @@
 # WindowsCMDTools
 Useful batch scripts for working with files from the Windows terminal. 
 
-Last Update: 20230808
+Last Update: 20231004
 
 Notes:  Scripts have only been tested using the command prompt on Windows 10.  
         Gzip does not ship with a standard Windows OS and must be downloaded. Using any of the gzip scripts will require the gzip utility to be in a pathed directory. I recommend downloading it via cygwin.
@@ -30,6 +30,8 @@ gzip_all.cmd                 : Compresses all files with the gzip utility in a d
 gzip_all_r.cmd               : Recursively compresses all files with the gzip utility in a directory tree. This operation starts from where the script is called.
 
 mark.cmd                     : Use in conjunction with go.cmd. Saves your current terminal location with a custom tag that can quickly be navigated to using go.cmd.  Re-implementation of code written by Andreas Thurnherr for Windows.
+
+r.cmd                        : Opens R in the terminal without needing to add the bin directory to your path. Should work with any version of R.
 
 untar_all.cmd                : Unzips all files that were compressed with the tar utility in a directory.
 
