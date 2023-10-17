@@ -1,9 +1,9 @@
 # WindowsFileUtilities
 Useful batch scripts for working with files from the Windows terminal. 
 
-Last Update: 20231004
+Last Update: 20231017
 
-Notes:  Scripts have only been tested using the command prompt on Windows 10.  
+Notes:  Scripts have only been tested using cmd on Windows 10.  
         Gzip does not ship with a standard Windows OS and must be downloaded. Using any of the gzip scripts will require the gzip utility to be in a pathed directory. I recommend downloading it via cygwin.
 
 ---------------------------------------------------------------------------------------------------------
