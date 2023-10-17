@@ -1,4 +1,4 @@
-# WindowsCMDTools
+# WindowsFileUtilities
 Useful batch scripts for working with files from the Windows terminal. 
 
 Last Update: 20231004
