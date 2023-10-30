@@ -1,8 +1,6 @@
 # WindowsFileUtilities
 Useful batch scripts for working with files from the Windows terminal. 
 
-Last Update: 20231017
-
 Notes:  Scripts have only been tested using cmd on Windows 10.  
         Gzip does not ship with a standard Windows OS and must be downloaded. Using any of the gzip scripts will require the gzip utility to be in a pathed directory. I recommend downloading it via cygwin.
 
@@ -32,6 +30,10 @@ gzip_all_r.cmd               : Recursively compresses all files with the gzip ut
 mark.cmd                     : Use in conjunction with go.cmd. Saves your current terminal location with a custom tag that can quickly be navigated to using go.cmd.  Re-implementation of code written by Andreas Thurnherr for Windows.
 
 r.cmd                        : Opens R in the terminal without needing to add the bin directory to your path. Should work with any version of R.
+
+tick.cmd                     : Stores current time in tick.txt. Use in conjunction with tock.cmd. Basic method for measuring duration of other operations.
+
+tock.cmd                     : Displays time stored with tick.cmd and the current time. Deletes tick.txt. Use in conjunction with tick.cmd. Basic method for measuring duration of other operations.
 
 untar_all.cmd                : Unzips all files that were compressed with the tar utility in a directory.
 
