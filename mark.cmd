@@ -1,4 +1,3 @@
-
 @echo off
 set "directory=c:\cdfiles"
 
