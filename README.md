@@ -9,13 +9,11 @@ Script Descriptions:
 
 addtopath.cmd                : Adds current directory to your path.
 
-appendtext_all.cmd           : Appends all text documents in a directory to a single file.
-
-appendtext_all_r.cmd         : Recursively appends all text documents in a directory tree to a single file. This operation starts from where the script is called. Output is saved where the script is called.
-
 filelist.cmd                 : Lists all files that match the extention used as the first argument. Saves output to a single text file.
 
 filelist_r.cmd               : Recursively lists all files in a directory tree that match the extention used as the first argument. Saves output to a single text file.
+
+filesmash.cmd                : Appends file contents to a single file based on user input. Allows for subdirectory recursion.
 
 go.cmd                       : Use in conjunction with mark.cmd. Quickly changes directory to a location that was previously saved with mark.cmd. Re-implementation of code written by Andreas Thurnherr for Windows.
 
