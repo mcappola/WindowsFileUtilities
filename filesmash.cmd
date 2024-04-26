@@ -22,7 +22,17 @@
 :: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @echo off
-if exist "output.txt" del output.txt
+
+if "%1"=="" goto :HELP 
+
+set test=FALSE
+if exist "output.txt" set test=TRUE
+
+if "%TEST%"=="TRUE" (
+	SET /P DELETE=OUTPUT.TXT ALREADY EXISTS. OVERWRITE? (Y/[N])
+	if /I "%DELETE%" == "Y" del output.txt 2>NUL
+	if /I "%DELETE%" == "N" goto END
+)
 
 if "%2"=="-r" goto RECURSIVE
 
@@ -42,6 +52,29 @@ for /R %a%\ %%f in (*.%1) do (
         type %%f >> output.txt
     )
 )
+
+goto END
+
+:HELP 
+
+echo(
+echo FILESMASH 
+echo     Appends file contents to a single output file based on user input.
+echo(
+echo Arguments
+echo     -First argument is the file extension type.
+echo     -Second [optional] argument is "-r" if recursion through the subdirectories from
+echo     where the script is called from is desired.
+echo(
+echo Output
+echo     "output.txt" which contains all file contents.
+echo(
+echo Example
+echo     filesmash txt        Appends content of all text files in the directory		
+echo     filesmash txt -r     Recursively appends content of all text files in a directory tree
+echo(
+
+goto END
 
 :END
 
