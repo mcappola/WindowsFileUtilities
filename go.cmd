@@ -1,3 +1,17 @@
+:: GO
+:: Quick directory navigation tool.
+:: CDs to path saved with mark.cmd.
+
+:: Default location for go files is c:\cdfiles
+:: Mark will make that directory if it does not exist.
+
+:: Example
+::    mark foobar             -Saves path in foobar.txt
+::    go foobar               -CDs to path in foobar.txt
+
+:: Michael Cappola (mcappola@udel.edu)
+:: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 @echo off
 set "directory=c:\cdfiles"
 
@@ -10,10 +24,9 @@ goto END
 :HELP
 echo(
 echo GO
-echo    Moves to saved directory for quick movement in the terminal.
-echo    Drive locations are saved with mark.cmd
+echo    Quick directory navigation from the terminal.
 echo(
-echo Example
+echo EXAMPLE
 echo    mark foobar		-Saves current path to foobar.txt
 echo    go foobar		-CDs to the path in foobar.txt
 echo(
