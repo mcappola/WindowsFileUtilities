@@ -1,25 +1,29 @@
 :: FILESMASH 
-:: Appends file contents to a single file based on user 
-:: input.
+:: Appends file contents to a single file based on user input
 
-:: Arguments
-:: [Required] 		:First argument is the file 
-::			extension.
+:: ARGUMENTS
+:: [Required] 		:First argument is the file extension type
 
-:: [Optional]		:Passing "-r" as the second 
-::			argument allows for recursion
-::			through the subdirectories from
-::			where the script is called.
+:: [Optional]		:Passing "-r" as the second argument 
+::                      allows for recursion through the 
+::                      subdirectories from where the script    
+::                      is called
 
-:: Example
-:: -- "filesmash txt"	:Appends all text files in a 
-::			directory
-:: -- "filesmash txt -r :Appends all text files directory 
-::			subdirectories from where the 
-::			script is called.
+:: Running the command with no arguments opens a help menu
+
+:: OUTPUT
+:: Results are stored in "output.txt"
+
+:: EXAMPLE
+::  filesmash txt	    :Appends all text files in a directory
+::                          to a single textfile.
+
+::  filesmash txt -r    :Appends all text files in a directory
+::                          (with subdirectory recursion) to a
+::                          single textfile. 
 
 :: Michael Cappola (mcappola@udel.edu)
-:: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @echo off
 
@@ -61,15 +65,15 @@ echo(
 echo FILESMASH 
 echo     Appends file contents to a single output file based on user input.
 echo(
-echo Arguments
+echo ARGUMENTS
 echo     -First argument is the file extension type.
 echo     -Second [optional] argument is "-r" if recursion through the subdirectories from
 echo     where the script is called from is desired.
 echo(
-echo Output
+echo OUTPUT
 echo     "output.txt" which contains all file contents.
 echo(
-echo Example
+echo EXAMPLE
 echo     filesmash txt        Appends content of all text files in the directory		
 echo     filesmash txt -r     Recursively appends content of all text files in a directory tree
 echo(
