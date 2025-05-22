@@ -9,13 +9,11 @@ Script Descriptions:
 
 addtopath.cmd                : Adds current directory to your path.
 
-filelist.cmd                 : Lists all files that match the extention used as the first argument. Saves output to a single text file.
-
-filelist_r.cmd               : Recursively lists all files in a directory tree that match the extention used as the first argument. Saves output to a single text file.
+filelist.cmd                 : Lists all files in a directory to single text file based on user input. Allows for subdirectory recursion.
 
 filesmash.cmd                : Appends file contents to a single file based on user input. Allows for subdirectory recursion.
 
-go.cmd                       : Use in conjunction with mark.cmd. Quickly changes directory to a location that was previously saved with mark.cmd. Re-implementation of code written by Andreas Thurnherr for Windows.
+go.cmd                       : Use in conjunction with mark.cmd. Quickly changes directory to a location that was previously saved with mark.cmd. My Windows implementation of code originally written by Andreas Thurnherr.
 
 gunzip_all.cmd               : Unzips all files that were compressed with the gzip utility in a directory.
 
@@ -25,7 +23,7 @@ gzip_all.cmd                 : Compresses all files with the gzip utility in a d
 
 gzip_all_r.cmd               : Recursively compresses all files with the gzip utility in a directory tree. This operation starts from where the script is called.
 
-mark.cmd                     : Use in conjunction with go.cmd. Saves your current terminal location with a custom tag that can quickly be navigated to using go.cmd.  Re-implementation of code written by Andreas Thurnherr for Windows.
+mark.cmd                     : Use in conjunction with go.cmd. Saves your current terminal location with a custom tag that can quickly be navigated to using go.cmd. My Windows implementation of code originally written by Andreas Thurnherr.
 
 r.cmd                        : Opens R in the terminal without needing to add the bin directory to your path. Should work with any version of R.
 
