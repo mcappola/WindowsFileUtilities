@@ -38,7 +38,7 @@ Mark and Go Demo:
 
 c:\foo\bar\mark customtag          -- This saves the path c:\foo\bar to a file named customtag.txt.
 
-c:\some\where\else\go customtag    -- This will CD back to c:\foo\bar. 
+c:\some\where\else\go customtag    -- This will change the directory back to c:\foo\bar. 
 
 
 
