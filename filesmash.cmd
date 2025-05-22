@@ -16,11 +16,11 @@
 
 :: EXAMPLE
 ::  filesmash txt	    :Appends all text files in a directory
-::                          to a single textfile.
+::                          to a single text file.
 
 ::  filesmash txt -r    :Appends all text files in a directory
 ::                          (with subdirectory recursion) to a
-::                          single textfile. 
+::                          single text file. 
 
 :: Michael Cappola (mcappola@udel.edu)
 :: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,12 +66,11 @@ echo FILESMASH
 echo     Appends file contents to a single output file based on user input.
 echo(
 echo ARGUMENTS
-echo     -First argument is the file extension type.
-echo     -Second [optional] argument is "-r" if recursion through the subdirectories from
-echo     where the script is called from is desired.
+echo     First argument is the file extension type.
+echo     Second [optional] argument is "-r" for recursion through the subdirectories
 echo(
 echo OUTPUT
-echo     "filesmash.txt" which contains all file contents.
+echo     "filesmash.txt" contains all file contents
 echo(
 echo EXAMPLE
 echo     filesmash txt        Appends content of all text files in the directory		
