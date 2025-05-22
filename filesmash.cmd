@@ -6,13 +6,13 @@
 
 :: [Optional]		:Passing "-r" as the second argument 
 ::                      allows for recursion through the 
-::                      subdirectories from where the script    
+::                      subdirectories from where the script 
 ::                      is called
 
 :: Running the command with no arguments opens a help menu
 
 :: OUTPUT
-:: Results are stored in "output.txt"
+:: Results are stored in "filesmash.txt"
 
 :: EXAMPLE
 ::  filesmash txt	    :Appends all text files in a directory
@@ -30,19 +30,19 @@
 if "%1"=="" goto :HELP 
 
 set test=FALSE
-if exist "output.txt" set test=TRUE
+if exist "filesmash.txt" set test=TRUE
 
 if "%TEST%"=="TRUE" (
-	SET /P DELETE=OUTPUT.TXT ALREADY EXISTS. OVERWRITE? (Y/[N])
-	if /I "%DELETE%" == "Y" del output.txt 2>NUL
+	SET /P DELETE=FILESMASH.TXT ALREADY EXISTS. OVERWRITE? (Y/[N])
+	if /I "%DELETE%" == "Y" del filesmash.txt 2>NUL
 	if /I "%DELETE%" == "N" goto END
 )
 
 if "%2"=="-r" goto RECURSIVE
 
 for %%f in (*.%1) do (
-    (echo "%%f" | find /I "output.txt" 1>NUL) || (
-        type %%f >> output.txt
+    (echo "%%f" | find /I "filesmash.txt" 1>NUL) || (
+        type %%f >> filesmash.txt
     )
 )
 
@@ -52,8 +52,8 @@ if "%2" NEQ "-r" goto END
 
 set "a=%cd%"
 for /R %a%\ %%f in (*.%1) do (
-    (echo "%%f" | find /I "output.txt" 1>NUL) || (
-        type %%f >> output.txt
+    (echo "%%f" | find /I "filesmash.txt" 1>NUL) || (
+        type %%f >> filesmash.txt
     )
 )
 
@@ -71,7 +71,7 @@ echo     -Second [optional] argument is "-r" if recursion through the subdirecto
 echo     where the script is called from is desired.
 echo(
 echo OUTPUT
-echo     "output.txt" which contains all file contents.
+echo     "filesmash.txt" which contains all file contents.
 echo(
 echo EXAMPLE
 echo     filesmash txt        Appends content of all text files in the directory		
